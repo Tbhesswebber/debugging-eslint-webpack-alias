@@ -19,7 +19,8 @@ In your terminal:
 
 - [.vscode/settings.json](./.vscode/settings.json) - contains settings for both ESLint and Prettier that I have played around with modifying
 - [client/src/index.jsx](./client/src/index.jsx) - entry point for app
-- [client/src/UI](./client/src/UI) - directory referred to by Webpack alias "@UI"
+- [client/src/App.jsx](./client/src/App.jsx) - app component showing all import statements in question
+- [client/src/UI](./client/src/UI) - directory referred to by Webpack aliases "@UI" and "UI"
 - [utils/build-utils/](./utils/build-utils/)- contain dynamic Webpack configurations (should be irrelevant)
 - [webpack.config.js](./webpack.config.js) - Contains default webpack configurations and merges multiple dynamic Webpack configurations into itself with [webpack-merge](https://www.npmjs.com/package/webpack-merge)
 - [package.json](./package.json) - Contains configs for _all_ tooling other than Webpack
