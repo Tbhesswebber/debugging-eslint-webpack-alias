@@ -41,8 +41,8 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) =>
       },
       resolve: {
         alias: {
-          '@UI': path.resolve(__dirname, 'client/src/UI/'),
-          '@src': path.resolve(__dirname, 'client/src/'),
+          UI: path.resolve(__dirname, 'client/src/UI/'),
+          '@UI': path.resolve(__dirname, 'client/src/UI'),
         },
       },
       plugins: [new HtmlWebpackPlugin({ template: './client/src/index.html' }), new webpack.ProgressPlugin()],
